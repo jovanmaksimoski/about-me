@@ -8,14 +8,22 @@ h2 {
   color: white;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  margin-top: 100px;
+  margin: 0;
+  background-color: rgb(195, 68, 68);
+
 }
 blockquote {
   display: flex;
   justify-content: end;
   font-family: italic;
 }
+
 
 p {
   margin-top: 15px;
@@ -24,28 +32,45 @@ p {
 
 img {
   display: block;
+  
+}
+
+.project-content img {
+  height: 100%;
+  width: 100%;
+
+
+}
+.jovan {
+
   max-height: 100px;
   max-width: fit-content;
   border-radius: 50%;
+  object-fit: contain;
+
 }
 
 .container {
-  width: 50%;
+  padding: 100px;
+  width: 70%;
   margin: auto;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(195, 68, 68);
+  
 }
 
 .content {
   justify-content: space-between;
   border-radius: 30px;
   padding: 100px;
-  background-color: rgb(195, 68, 68);
+  background-color: blueviolet;
+
 }
 
 .text {
   margin-top: 50px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 10px;
   color: white;
 }
@@ -53,4 +78,51 @@ img {
 .header {
   display: flex;
   justify-content: space-between;
+}
+
+
+.projects {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  text-align: center;
+  background-color: blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 33.33%;
+  height: 400px;
+}
+
+.project-desc  {
+  margin-top: 20px;
+  width: 300px;
+  padding: 10px;
+  background-color: blueviolet;
+  border-radius: 10%;
+  color: white;
+}
+
+.project-desc p {
+  margin-top: 0;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+
+button {
+  background-color: rgb(195, 68, 68);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
